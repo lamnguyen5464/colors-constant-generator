@@ -25,7 +25,7 @@ const getPercent = (num) => {
   return num / 255;
 };
 
-let content = `extension UIColor{\n${getTab(
+let content = `import UIKit\n\nextension UIColor{\n${getTab(
   1
 )}static func getColor(hex: String) -> UIColor{\n${getTab(2)}switch hex {\n`;
 
